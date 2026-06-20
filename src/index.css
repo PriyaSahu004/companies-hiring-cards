@@ -1,0 +1,217 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.parent{
+  height: 100%;
+  width: 100%;
+  /* background-color: purple; */
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  background-color: #f1f2f2;
+  width: 260px;
+  height: 350px;
+  margin: 15px;
+  padding: 30px;
+  border-radius: 25px;
+} 
+
+.logo{
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: burlywood; */
+}
+.logo img{
+  height: 55px;
+  width: 55px;
+  float: left;
+  
+  object-fit: cover;
+  border: 1px solid rgb(154, 154, 154);
+  padding: 7px;
+  border-radius: 50%;
+}
+.logo h5{
+  float: right;
+  border: 1px solid rgb(134, 132, 132);
+  color: gray;
+  padding: 1px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container{
+  /* background-color: greenyellow; */
+  /* column-gap: 8px; */
+  margin-bottom: 65px;
+  margin-top: 10px;
+
+}
+.name , .work{
+  margin: 0;
+  padding: 0;
+}
+.work h1, .btn{
+  margin: 0;
+}
+.name h2{
+  font-size: 18px;
+}
+.name p{
+  color: grey;
+  font-size: 11px;
+  font-weight: 450;
+}
+.name{
+  color: #000;
+  display: flex;
+  /* background-color: #c084fc; */
+  /* font-size: 15px; */
+  gap: 8px;
+  display: flex;
+  text-align:center;
+  align-items: baseline;
+}
+
+.work{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  
+  /* background-color: #6b6375; */
+  /* margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px; */
+  
+  font-size: 12px;
+  
+}
+.work h1{
+  color: black;
+  /* background-color: thistle; */
+  margin: 0 0 10px 0;
+  padding: 0;
+  
+
+}
+
+.btn{
+  display: flex;
+  gap: 13px;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: center;
+}
+.btn h3{
+  background-color: rgb(189, 189, 189);
+  color: #000;
+  font-size: 13px;
+  /* padding: 2px; */
+  border-radius: 5px;
+  width: 25%;
+}
+.line{
+  background-color: grey;
+}
+.bottom{
+  /* background-color: yellowgreen; */
+  padding: 5px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* column-gap: 125px; */
+  justify-content: space-between;
+}
+.charge{
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.charge h2, .charge p{
+  margin: 0;
+}
+
+.charge p{
+  color: grey;
+  font-size: 14px;
+  display:flex
+}
+.apply button{
+  background-color: #000;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+}
